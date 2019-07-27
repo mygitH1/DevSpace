@@ -6,10 +6,10 @@ import PostItem from './PostItem';
 import PostForm from './PostForm';
 import { getPosts } from '../../actions/post';
 
-const Posts = ({ getPosts, post: { posts, loading } }) => {
+const Posts = ({ getPosts, post: { posts, loading }, match }) => {
   useEffect(() => {
-    getPosts();
-  }, [getPosts]);
+    getPosts(match.params.id);
+  }, [getPosts, match.params.id]);
 
   return loading ? (
     <Spinner />
