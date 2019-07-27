@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://luis123:DEVDEV1@space@devspace-ha4wm.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret",
+  "githubClientId": "",
+  "githubSecret": ""
+}
